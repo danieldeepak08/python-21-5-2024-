@@ -1,0 +1,10 @@
+num = int(input("Enter any integer: "))
+
+if num < 0:
+    print("No")
+else:
+    sqrt_num = int(num ** 0.5)
+    if sqrt_num * sqrt_num == num:
+        print("Yes")
+    else:
+        print("No")
