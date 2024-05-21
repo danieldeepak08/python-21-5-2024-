@@ -1,0 +1,10 @@
+
+n = int(input("Enter the value of n: "))
+k = int(input("Enter the value of k (2 <= k <= 9): "))
+count = 0
+number = 0
+while count < n:
+    number += 1
+    if str(k) in str(number) or number % k == 0:
+        count += 1
+print(f"The {n}-th number that contains the digit {k} or is divisible by {k} is: {number}")
