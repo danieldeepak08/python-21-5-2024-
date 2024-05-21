@@ -1,0 +1,18 @@
+
+n = int(input("Enter a number: "))
+prime_factors = set()
+while n % 2 == 0:
+    prime_factors.add(2)
+    n = n // 2
+i = 3
+while i * i <= n:
+    while n % i == 0:
+        prime_factors.add(i)
+        n = n // i
+    i += 2
+if n > 2:
+    prime_factors.add(n)
+product = 1
+for factor in prime_factors:
+    product *= factor
+print(f"The product of all unique prime factors is: {product}")
