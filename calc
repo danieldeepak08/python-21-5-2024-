@@ -1,0 +1,26 @@
+num1, num2 = map(int, input("Enter two numbers: ").split())
+option = int(input("Enter your option: "))
+
+if option == 1:
+    result = num1 + num2
+    print("Sum =", result)
+elif option == 2:
+    result = num1 - num2
+    print("Difference =", result)
+elif option == 3:
+    result = num1 * num2
+    print("Product =", result)
+elif option == 4:
+    result = num1 / num2
+    print("Quotient =", format(result, ".2f"))
+elif option == 5:
+    result = num1 % num2
+    print("Modulus =", result)
+elif option == 6:
+    result = (num1 + num2) / 2
+    print("Average =", format(result, ".2f"))
+elif option == 7:
+    result = num1 ** num2
+    print("Power =", result)
+else:
+    print("Invalid option")
