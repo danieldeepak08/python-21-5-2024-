@@ -1,0 +1,14 @@
+
+n = 50
+primes_str = ""
+for num in range(2, n + 1):
+    is_prime = True
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        if primes_str:  # Check if primes_str is not empty
+            primes_str += ", "  # Add comma separator if needed
+        primes_str += str(num)  # Append the prime number to primes_str
+print(f"Prime numbers up to {n}: {primes_str}")
