@@ -1,0 +1,7 @@
+hours = int(input("Enter time in hours: "))
+
+if hours < 0 or hours > 11:
+    print("Invalid input")
+else:
+    coincide_time = (hours * 60) / 11
+    print("({} / 11)".format(coincide_time))
