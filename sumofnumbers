@@ -1,0 +1,9 @@
+
+n = int(input("Enter the number of integers: "))
+sum = 0
+count = 1
+while count <= n:
+    num = int(input(f"Enter integer {count}: "))
+    sum += num
+    count += 1
+print(f"The sum of {n} numbers is: {sum}")
