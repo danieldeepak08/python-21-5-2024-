@@ -1,0 +1,10 @@
+
+N = 10
+a, b = 0, 1
+print("Fibonacci series of", N, "numbers:")
+print(a, end=" ")
+print(b, end=" ")
+for _ in range(2, N):
+    c = a + b
+    print(c, end=" ")
+    a, b = b, c
