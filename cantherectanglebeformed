@@ -1,0 +1,7 @@
+sides = input("Enter rectangle four sides of length: ").split()
+sides = [int(side) for side in sides]
+
+if len(set(sides)) == 2:
+    print("Yes")
+else:
+    print("No")
